@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Main</title>
+        <style>
+            h1{
+                text-align: center;
+            }
+
+            .welcome_card{
+                text-align: center;
+            }
+
+            .card_case{
+                
+                display: flex;
+            }
+
+            .card{
+                
+            flex: 1;
+            }
+
+            .card_img{
+                width: 300px;
+                height: 300px;
+                margin: auto;
+                display: block;
+            }
+
+            .card_title{
+                text-align: center;
+            }
+
+            .card_button{
+                width: 100px;
+                height: 25px;
+                margin: auto;
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>TennisMarket</h1>
+        <div class="welcome_card">
+            welcome to Tennis Market! <br>
+            Enjoy your shopping.
+            <br>
+            <br>
+            <a href="./orderlist"> order list </a>
+        </div>
+        <div class="card_case">
+        <div class="card">
+            <img class = "card_img" src="./img/redRacket.png">
+            <p class="card_title">Red Racker</p>
+            <input class="card_button" type="button" value="order" 
+            onclick="location.href='/order?productId=1', alert('Red Racket이 주문되었습니다.')">
+        </div>
+        <div class="card">
+            <img class = "card_img" src="./img/blueRacket.png">
+            <p class="card_title">Red Racker</p>
+            <input class="card_button" type="button" value="order" 
+            onclick="location.href='/order?productId=2', alert('Blue Racket이 주문되었습니다.')">
+        </div>
+        <div class="card">
+            <img class = "card_img" src="./img/blackRacket.png">
+            <p class="card_title">Red Racker</p>
+            <input class="card_button" type="button" value="order" 
+            onclick="location.href='/order?productId=3', alert('Black Racket이 주문되었습니다.')">
+        </div>
+        </div>
+    </body>
+</html>
